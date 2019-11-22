@@ -39,6 +39,7 @@ body {
   max-width: 1200px;
   margin: 0 auto;
   margin-top: 100px;
+  margin-bottom: 50px
 }
 
 /* The actual timeline (the vertical ruler) */
@@ -46,7 +47,7 @@ body {
   content: '';
   position: absolute;
   width: 6px;
-  background-color: #66887f;
+  background-color: #396746;
   top: 20px;
   bottom: 120px;
   left: 50%;
@@ -108,7 +109,7 @@ body {
 /* The actual content */
 .content-s {
   padding: 20px 30px;
-  background-color: #D9DDDC;
+  background-color: #c4c4c4;
   position: relative;
   border-radius: 6px;
 }

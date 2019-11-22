@@ -117,7 +117,7 @@ body {
 #container {
   position: fixed;
   width: 340px;
-  height: 280px;
+  /* height: 280px; */
   top: 50%;
   left: 50%;
   margin-top: -140px;
@@ -152,7 +152,7 @@ body {
   color: #555;
   display: inline-block;
   margin-left: 18px;
-  padding-top: 10px;
+  /* padding-top: 10px; */
   font-size: 14px;
  }
   
@@ -182,7 +182,7 @@ body {
   color: #777;
   padding-left: 10px;
   margin: 10px;
-  margin-top: 12px;
+  /* margin-top: 12px; */
   margin-left: 18px;
   width: 290px;
   height: 35px;

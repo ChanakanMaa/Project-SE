@@ -24,6 +24,20 @@
           background-color: white;
           font-family: 'rsuregular';
         }
+        table {
+            font-family: 'rsuregular';
+            color: #396746;
+            border-collapse: collapse;
+            width: 100%;
+        }
+        td, th {
+            border: 1px solid #dddddd;
+            text-align: left;
+            padding: 8px;
+        }
+       /* tr:nth-child(odd) {
+            background-color: #a4c1c3;
+        }*/
       </style>
     <body>
     <div id="h-menu" style="margin-bottom: 50px;">
@@ -81,6 +95,25 @@
                                     <div class="wpb_wrap">
                                         <div class="vc_contain" data-vc-action="collapse">
                                             <div class="vc vc_general vc_spacing vc_color">
+                                                <div class="vc_tab-contain">
+                                                        <ul class="vc_tab-list">
+                                                            <li class="vc_tab vc_active" style="background: #fff;" data-vc-tab>
+                                                                <a href="status.html" class="vc">
+                                                                <span class="vc_title-text">งานที่กำลังดำเนินการแปล</span>
+                                                            </a>
+                                                            </li>
+                                                            <li class="vc_tab" data-vc-tab>
+                                                                <a href="status_finish.html" class="vc">
+                                                                    <span class="vc_title-text" style="color: #fff;">งานที่เสร็จแล้ว</span>
+                                                                </a>
+                                                            </li>
+                                                            <li class="vc_tab" data-vc-tab>
+                                                                <a href="status_cancel.html" class="vc">
+                                                                    <span class="vc_title-text" style="color: #fff;">งานที่ยกเลิก</span>
+                                                                </a>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
   
                                                 <div class="vc_panel-contain">
                                                     <div class="vc_panels">
@@ -89,71 +122,29 @@
                                                                 <div class="vc_border">
                                                                     <div class="from-group container">
                                                                         <div class="row">
-                                                                            <div class="col-md-4">
-                                                                                <p style="font-size: 20px;">ประเภทงานแปล :
-                                                                                    <select style="border-radius: 4px;">
-                                                                                        <option value="จดหมาย">จดหมาย</option>
-                                                                                        <option value="วรรณกรรม">วรรณกรรรม</option>
-                                                                                        <option value="เอกสารทั่วไป">เอกสารทั่วไป</option>
-                                                                                        <option value="เอกสารราชการ">เอกสารราชการ</option>
-                                                                                    </select>
-                                                                                </p>
-                                                                            </div>
-                                                                        </div>
-                                                                        <div class="row">
-                                                                            <div class="col-md-4">
-                                                                                <p style="font-size: 20px;"> ภาษาต้นฉบับ : 
-                                                                                    <select style="border-radius: 4px;">
-                                                                                        <option value="ภาษาไทย">ภาษาไทย</option>
-                                                                                        <option value="ภาษาอังกฤษ">ภาษาอังกฤษ</option>
-                                                                                        <option value="ภาษาจีน">ภาษาจีน</option>
-                                                                                        <option value="ภาษาญี่ปุ่น">ภาษาญี่ปุ่น</option>
-                                                                                        <option value="ภาษาเกาหลี">ภาษาเกาหลี</option>
-                                                                                        <option value="ภาษารัสเซีย">ภาาษารัสเซีย</option>
-                                                                                    </select>
-                                                                                </p>
-                                                                            </div>
-                                                                                <p style="font-size: 20px;"> ภาษาแปล : 
-                                                                                    <select style="border-radius: 4px;">
-                                                                                    <option value="ภาษาไทย">ภาษาไทย</option>
-                                                                                    <option value="ภาษาอังกฤษ">ภาษาอังกฤษ</option>
-                                                                                    <option value="ภาษาจีน">ภาษาจีน</option>
-                                                                                    <option value="ภาษาญี่ปุ่น">ภาษาญี่ปุ่น</option>
-                                                                                    <option value="ภาษาเกาหลี">ภาษาเกาหลี</option>
-                                                                                    <option value="ภาษารัสเซีย">ภาาษารัสเซีย</option>
-                                                                                    </select>
-                                                                                </p>
-                                                                        </div>
-                                                                        <div class="row">
-                                                                            <div class="col-md-4">
-                                                                                <p style="font-size: 20px;"> ปิดเสนอราคา : 
-                                                                                    <select style="border-radius: 4px;">
-                                                                                    <option value="24 ชั่วโมง">24 ชั่วโมง</option>
-                                                                                    <option value="23 ชั่วโมง">23 ชั่วโมง</option>
-                                                                                    <option value="22 ชั่วโมง">22 ชั่วโมง</option>
-                                                                                    <option value="21 ชั่วโมง">21 ชั่วโมง</option>
-                                                                                    <option value="20 ชั่วโมง">20 ชั่วโมง</option>
-                                                                                    <option value="19 ชั่วโมง">19 ชั่วโมง</option>
-                                                                                    <option value="18ชั่วโมง">18 ชั่วโมง</option>
-                                                                                    <option value="17 ชั่วโมง">17 ชั่วโมง</option>
-                                                                                    <option value="16 ชั่วโมง">16 ชั่วโมง</option>
-                                                                                    <option value="15 ชั่วโมง">15 ชั่วโมง</option>
-                                                                                    <option value="14 ชั่วโมง">14 ชั่วโมง</option>
-                                                                                    <option value="13 ชั่วโมง">13 ชั่วโมง</option>
-                                                                                    <option value="12 ชั่วโมง">12 ชั่วโมง</option>
-                                                                                    <option value="11 ชั่วโมง">11 ชั่วโมง</option>
-                                                                                                                         <option value="10 ชั่วโมง">10 ชั่วโมง</option>
-                                                                                    <option value="9 ชั่วโมง">9 ชั่วโมง</option>
-                                                                                    <option value="8 ชั่วโมง">8 ชั่วโมง</option>
-                                                                                    <option value="7 ชั่วโมง">7 ชั่วโมง</option>
-                                                                                    <option value="6 ชั่วโมง">6 ชั่วโมง</option>
-                                                                                    <option value="5 ชั่วโมง">5 ชั่วโมง</option>
-                                                                                    <option value="4 ชั่วโมง">4 ชั่วโมง</option>
-                                                                                    <option value="3 ชั่วโมง">3 ชั่วโมง</option>
-                                                                                    <option value="2 ชั่วโมง">2 ชั่วโมง</option>
-                                                                                    <option value="1 ชั่วโมง">1 ชั่วโมง</option>
-                                                                                    </select>
-                                                                                </p>
+                                                                            <div class="col-md-10">
+                                                                                <table>
+                                                                                    <!-- head -->
+                                                                                      <tr>
+                                                                                        <th>หมายเลขงาน</th>
+                                                                                        <th>ชื่องาน</th>
+                                                                                        <th>ประเภทงาน</th>
+                                                                                        <th>ชื่อนักแปล</th>
+                                                                                        <th>วันที่กำหนดส่งงาน</th>
+                                                                                        <th>ยอดชำระ</th>
+                                                                                        <th>ความก้าวหน้า</th>
+                                                                                      </tr>
+                                                                                      <!-- end head -->
+                                                                                      <tr>
+                                                                                        <td>00001</td>
+                                                                                        <td>ไฟล์_a</td>
+                                                                                        <td>วรรณกรรม</td>
+                                                                                        <td>วันก่อนคับ คับ</td>
+                                                                                        <td>28-November-2019</td>
+                                                                                        <td>1000 ฿</td>
+                                                                                        <td>10%</td>
+                                                                                      </tr>
+                                                                                    </table>
                                                                             </div>
                                                                         </div>
                                                                     </div>

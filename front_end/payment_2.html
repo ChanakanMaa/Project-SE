@@ -30,13 +30,11 @@
             border-collapse: collapse;
             width: 100%;
         }
-
         td, th {
             border: 1px solid #dddddd;
             text-align: left;
             padding: 8px;
         }
-
        /* tr:nth-child(odd) {
             background-color: #a4c1c3;
         }*/
@@ -97,7 +95,7 @@
                                     <div class="wpb_wrap">
                                         <div class="vc_contain" data-vc-action="collapse">
                                             <div class="vc vc_general vc_spacing vc_color">
-  
+
                                                 <div class="vc_panel-contain">
                                                     <div class="vc_panels">
                                                         <div class="vc_panel vc_active">
@@ -112,9 +110,11 @@
                                                                                 <p style="font-size: 18px;"> ชื่อนักแปล : นาย_ก</p>
                                                                                 <p style="font-size: 18px;"> เลขที่บัญชี : 000-000000-0 ธนาคาร ABC </p>
                                                                                 <p style="font-size: 18px;"> ยอดที่ต้องชำระ : 1000 บาท</p>
+                                                                                <form>
                                                                                 <div id="lower">
-                                                                                  <input type="submit" value="อัพโหลดหลักฐาน">
+                                                                                  <input formaction="payment.html" type="submit" value="บันทึก">
                                                                                 </div>
+                                                                                </form>
                                                                             </div>
                                                                         </div>
                                                                     </div>
@@ -123,7 +123,7 @@
                                                         </div>
                                                     </div>
                                                 </div>
-  
+
                                             </div>
                                         </div>
                                     </div>
@@ -200,7 +200,8 @@
         </div>
       </div>
     </div>
+
   </div>
   </body>
   </head>
-</html>
+</html> 

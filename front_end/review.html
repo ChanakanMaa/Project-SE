@@ -1,0 +1,70 @@
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>เว็บไซต์รวบรวมนักแปลภาษา</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+		<link rel="stylesheet" type="text/css" href="css/style.css">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+		<link href="css/headWed.css" rel="stylesheet">
+		<!-- <link href="css/content.css" rel="stylesheet"> -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+        <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link href="https://fonts.googleapis.com/css?family=Barlow+Semi+Condensed" rel="stylesheet">
+
+        <!-- link review -->
+        <!-- <link rel="stylesheet" href="font-awesome.min.css">
+        <link rel="stylesheet" href="css/rating.css">
+        <script src="//code.jquery.com/jquery.min.js"></script>
+        <script src="js/rating.js"></script> -->
+
+		<style>
+    		body{
+        	/*background-color: #c2c7b0;*/
+        	background-color: #a4c1c3;
+        	font-family: 'rsuregular';
+            }
+            .col-sm-6{
+                float: none !important;
+            }
+  		</style>
+	<body>
+    <div id="h-menu" style="margin-bottom: 50px;"></div>
+
+    <div class="vc_panel-body" style="margin-bottom: 50px; margin-top: -30px;">
+        <div class="vc_border">
+            <div class="from-group container">
+                <div class="rating">
+                            
+                    <div class="container">
+                        <div class="col-sm-6">
+                                    
+                            <div id="ratingBox" class="additional"></div>
+                                <input name="rate" type="hidden"/><br>
+                                <br>
+                            </div>
+                            <ul>
+                                <span id="1" style="font-size:45px; cursor:pointer;"  class="fa fa-star" onmouseover="startRating(this)" startRating="starmark(this)" ></span>
+				                <span id="2"  style="font-size:45px; cursor:pointer;" class="fa fa-star" onmouseover="startRating(this)" startRating="starmark(this)"></span>
+				                <span id="3"  style="font-size:45px; cursor:pointer;" class="fa fa-star" onmouseover="startRating(this)" startRating="starmark(this)"></span>
+				                <span id="4"  style="font-size:45px; cursor:pointer;" class="fa fa-star" onmouseover="startRating(this)" startRating="starmark(this)"></span>
+				                <span id="5"  style="font-size:45px; cursor:pointer;" class="fa fa-star" onmouseover="startRating(this)" startRating="starmark(this)"></span>
+                            </ul>
+                            <div class="form-group">
+                                <h3>ความคิดเห็นต่อผู้แปล:</h3>
+                                <textarea id="review" class="form-control" style="resize:none; height:100px;"></textarea>
+                            </div>
+                            <center><button class="btn btn-success" onclick="result()">SUBMIT</button></center>
+                            <div id="result"></div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+	</body>
+	</head>
+</html>
